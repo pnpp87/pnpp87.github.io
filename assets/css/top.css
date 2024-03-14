@@ -1,0 +1,38 @@
+body {
+    height: 100%;
+    background: url(/assets/img/kuma.png);
+    background-size: cover;
+}
+@media (max-width: 767px) {
+  body {
+    background-position-x: -280px;
+  }
+}
+
+.topList{
+    display: flex;
+    gap: 30px;
+    margin: 60px 0;
+    list-style: none;
+}
+@media (max-width: 767px) {
+  .topList {
+    gap: 50px;
+    flex-direction: column;
+  }
+}
+
+.topItem{
+    font-size: 30px;
+}
+.topItem a{
+    position: relative;
+    padding-left: 22px;
+}
+.topItem a:hover:before{
+    position: absolute;
+    left: -3px;
+    top: 2px;
+    content: "▶";
+    font-size: 22px;
+}

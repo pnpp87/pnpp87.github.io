@@ -1,0 +1,46 @@
+.worksWrap{
+    display: grid;
+    grid-template-columns: 300px 300px;
+    grid-auto-rows: 250px;
+    gap: 20px;
+    width: 600px;
+    margin: 0 auto;
+}
+@media (max-width: 767px) {
+  .worksWrap {
+    grid-template-columns: 220px;
+    grid-auto-rows: 200px;
+    gap: 30px;
+    width: 220px;
+  }
+}
+.worksLink{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 40px 0;
+    border: solid 3px #2a2a2a;
+    font-size: 24px;
+    text-align: center;
+}
+@media (max-width: 767px) {
+    .worksLink{
+        padding: 30px 0;
+    }
+}
+.worksLink3d{
+    background: url(/assets/img/works/3d/cat/cat_rotate.gif);
+    background-size: cover;
+    background-position-x: 53%;
+}
+.worksLink img{
+    width: 170px;
+    height: auto;
+}
+@media (max-width: 767px) {
+    .worksLink img{
+        width: 130px;
+        height: auto;
+    }
+}
