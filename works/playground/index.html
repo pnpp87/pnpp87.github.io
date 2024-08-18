@@ -2,9 +2,14 @@
 <html>
   <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width">
+    <title>pnpp's room</title>
+    <meta name="description" content="">
     <script src="https://unpkg.com/three@0.147.0/build/three.min.js"></script>
     <script src="https://unpkg.com/three@0.147.0/examples/js/controls/OrbitControls.js"></script>
     <script src="https://unpkg.com/three@0.142.0/examples/js/loaders/GLTFLoader.js"></script>
+    <link rel="stylesheet" href="/assets/css/common.css">
+    <link rel="stylesheet" href="/assets/css/playground.css">
     <script type="module">
       window.addEventListener("DOMContentLoaded", init);
         function init() {
@@ -54,9 +59,9 @@
                 function (glb) {
                     model = glb.scene;
                     model.name = "model_castle";
-                    model.scale.set(80.0, 80.0, 80.0);
-                    model.position.set(0,-200,0);
-                    model.rotation.set(Math.PI/4,1,0); 
+                    model.scale.set(400.0,400.0,400.0);
+                    model.position.set(0,0,0);
+                    model.rotation.set(Math.PI/1,1,3); 
                     scene.add( glb.scene );
                 },
                 function (error) {
@@ -78,6 +83,16 @@
     </script>
   </head>
   <body>
-    <canvas id="myCanvas"></canvas>
+    <div class="wrap">
+      <div class="title">
+        <p class="titleMain">meeta</p>
+        <p class="titleSub">Syringe for Timing method</p>
+        <div class="frame">
+          <button class="custom-btn btn-13">BUY now!</button>
+        </div>
+      </div>
+       
+      <canvas id="myCanvas" width="100%" height="auto"></canvas>
+    </div>
   </body>
 </html>
