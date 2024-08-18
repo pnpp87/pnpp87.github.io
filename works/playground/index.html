@@ -67,6 +67,9 @@
             // リアルタイムレンダリング
         	tick();
         	function tick() {
+            if (model) {
+                model.rotation.y += 0.01; // Y軸回転
+            }
         		controls.update();
         		renderer.render(scene, camera);
         		requestAnimationFrame(tick);
