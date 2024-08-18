@@ -15,9 +15,25 @@ body {
     padding-left: 150px;
     text-align: right;
 }
+@media screen and (max-width: 768px){
+    .wrap{
+        width: 100%;
+        display: flex;
+        flex-direction: column-reverse;
+        padding-left: initial;
+        text-align: center;
+        overflow: hidden;
+    }
+}
 .title{
     position: absolute;
     top: 180px;
+    z-index: 1;
+}
+@media screen and (max-width: 768px){
+    .title{
+        position: initial;
+    }
 }
 .titleMain{
     padding-bottom: 2px;
@@ -28,17 +44,33 @@ body {
     color: #ff8f6c;
     font-size: 27px;
 }
-canvas{
+@media screen and (max-width: 768px){
+    .titleSub{
+        font-size: 24px;
+    }
+}
+@media screen and (max-width: 768px){
+    canvas{
+        width: 100% !important;
+        height: auto !important;
+        margin: 60px 0;
+        transform: scale(1.6);
+    }
 }
 
 /* button */
-  .frame {
+.frame {
     text-align: right;
-  }
-  button {
+}
+@media screen and (max-width: 768px){
+    .frame {
+        text-align: center;
+    }
+}
+button {
     margin: 30px;
-  }
-  .custom-btn {
+}
+.custom-btn {
     width: 150px;
     height: 50px;
     padding: 16px 0;
@@ -52,20 +84,20 @@ canvas{
     transition: all 0.3s ease;
     position: relative;
     display: inline-block;
-     box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
-     7px 7px 20px 0px rgba(0,0,0,.1),
-     4px 4px 17px 0px rgba(0,0,0,.1);
+        box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+        7px 7px 20px 0px rgba(0,0,0,.1),
+        4px 4px 17px 0px rgba(0,0,0,.1);
     outline: none;
-  }
-  
-  /* 13 */
-  .btn-13 {
+}
+
+/* 13 */
+.btn-13 {
     background-color: #89d8d3;
     background-image: linear-gradient(315deg, #89d8d3 0%, #ff8f6c 74%);
     border: none;
     z-index: 1;
-  }
-  .btn-13:after {
+}
+.btn-13:after {
     position: absolute;
     content: "";
     width: 100%;
@@ -77,19 +109,19 @@ canvas{
     background-color: #4dccc6;
     background-image: linear-gradient(315deg, #9ae7e2 0%, #ffc3b0 74%);
     box-shadow:
-     -7px -7px 20px 0px #fff9,
-     -4px -4px 17px 0px #fff9,
-     7px 7px 20px 0px #0002,
-     4px 4px 5px 0px #0001;
+        -7px -7px 20px 0px #fff9,
+        -4px -4px 17px 0px #fff9,
+        7px 7px 20px 0px #0002,
+        4px 4px 5px 0px #0001;
     transition: all 0.3s ease;
-  }
-  .btn-13:hover {
+}
+.btn-13:hover {
     color: #fff;
-  }
-  .btn-13:hover:after {
+}
+.btn-13:hover:after {
     top: 0;
     height: 100%;
-  }
-  .btn-13:active {
+}
+.btn-13:active {
     top: 2px;
-  }
+}
